@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A226F89026D41524004A6F40 /* libskyepub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A226F88F26D41504004A6F40 /* libskyepub.a */; };
+		A28E59E2278CB9E300A3A4E0 /* Alice.epub in Resources */ = {isa = PBXBuildFile; fileRef = A28E59DF278CB8F900A3A4E0 /* Alice.epub */; };
+		A28E59E3278CB9E600A3A4E0 /* Doctor.epub in Resources */ = {isa = PBXBuildFile; fileRef = A28E59E0278CB8FA00A3A4E0 /* Doctor.epub */; };
+		A28E59E4278CB9E700A3A4E0 /* Mayflower Antique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A28E59E1278CB91700A3A4E0 /* Mayflower Antique.ttf */; };
+		A296552F257DFB8100D6FD3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A296552E257DFB8100D6FD3F /* Main.storyboard */; };
+		A2965534257DFEF300D6FD3F /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = A2965533257DFEF300D6FD3F /* Setting.m */; };
+		A2965539257F1ED000D6FD3F /* SkyData.m in Sources */ = {isa = PBXBuildFile; fileRef = A2965538257F1ED000D6FD3F /* SkyData.m */; };
+		A296553D2583330000D6FD3F /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A296553C2583330000D6FD3F /* SettingViewController.m */; };
+		A29655492583622900D6FD3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A29655482583622800D6FD3F /* Assets.xcassets */; };
+		A2A1566226F2F79600F5F519 /* uwch.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A1566026F2F77200F5F519 /* uwch.ttf */; };
+		A2CDA72B2593ABF70083592D /* SearchResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2CDA72A2593ABF70083592D /* SearchResultView.xib */; };
+		A2CDA72E2593AC490083592D /* SearchResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CDA72D2593AC490083592D /* SearchResultView.m */; };
+		A2CDA7362595B38B0083592D /* ContentsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CDA7352595B38B0083592D /* ContentsTableViewCell.m */; };
+		A2CDA7392595B3BE0083592D /* NotesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CDA7382595B3BE0083592D /* NotesTableViewCell.m */; };
+		A2CDA73C2595B3E80083592D /* BookmarksTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CDA73B2595B3E80083592D /* BookmarksTableViewCell.m */; };
+		A2CDA73F259658840083592D /* MagazineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CDA73E259658840083592D /* MagazineViewController.m */; };
+		A2CDA742259672620083592D /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CDA741259672620083592D /* Theme.m */; };
+		A2DFE077258727AC000C7638 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DFE076258727AC000C7638 /* HomeViewController.m */; };
+		A2DFE07A2587C21E000C7638 /* BookCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DFE0792587C21E000C7638 /* BookCollectionViewCell.m */; };
+		A2DFE07E2587F184000C7638 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2DFE0802587F184000C7638 /* Localizable.strings */; };
+		A2DFE08425888503000C7638 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DFE08325888503000C7638 /* BookViewController.m */; };
+		A2E78E79257DC9AE00CC915A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E78E78257DC9AE00CC915A /* AppDelegate.m */; };
+		A2E78E7C257DC9AE00CC915A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E78E7B257DC9AE00CC915A /* SceneDelegate.m */; };
+		A2E78E87257DC9AE00CC915A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E78E85257DC9AE00CC915A /* LaunchScreen.storyboard */; };
+		A2E78E8A257DC9AE00CC915A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E78E89257DC9AE00CC915A /* main.m */; };
+		A2E78EAC257DCAE100CC915A /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E78EA3257DCAE000CC915A /* FMDatabasePool.m */; };
+		A2E78EAD257DCAE100CC915A /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E78EA6257DCAE100CC915A /* FMResultSet.m */; };
+		A2E78EAE257DCAE100CC915A /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E78EA7257DCAE100CC915A /* FMDatabase.m */; };
+		A2E78EAF257DCAE100CC915A /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E78EA8257DCAE100CC915A /* FMDatabaseQueue.m */; };
+		A2E78EB0257DCAE100CC915A /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E78EAA257DCAE100CC915A /* FMDatabaseAdditions.m */; };
+		A2E78EB6257DCB1B00CC915A /* Books.sql in Resources */ = {isa = PBXBuildFile; fileRef = A2E78EB2257DCB1A00CC915A /* Books.sql */; };
+		A2E78EB7257DCB1B00CC915A /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = A2E78EB3257DCB1A00CC915A /* script.js */; };
+		A2E78EB8257DCB1B00CC915A /* scriptForFixed.js in Resources */ = {isa = PBXBuildFile; fileRef = A2E78EB4257DCB1A00CC915A /* scriptForFixed.js */; };
+		A2E78EB9257DCB1B00CC915A /* custom.css in Resources */ = {isa = PBXBuildFile; fileRef = A2E78EB5257DCB1B00CC915A /* custom.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A226F88F26D41504004A6F40 /* libskyepub.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libskyepub.a; sourceTree = "<group>"; };
+		A28E59DF278CB8F900A3A4E0 /* Alice.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = Alice.epub; sourceTree = "<group>"; };
+		A28E59E0278CB8FA00A3A4E0 /* Doctor.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = Doctor.epub; sourceTree = "<group>"; };
+		A28E59E1278CB91700A3A4E0 /* Mayflower Antique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mayflower Antique.ttf"; sourceTree = "<group>"; };
+		A296552E257DFB8100D6FD3F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A2965532257DFEF300D6FD3F /* Setting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
+		A2965533257DFEF300D6FD3F /* Setting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
+		A2965537257F1ED000D6FD3F /* SkyData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkyData.h; sourceTree = "<group>"; };
+		A2965538257F1ED000D6FD3F /* SkyData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkyData.m; sourceTree = "<group>"; };
+		A296553B2583330000D6FD3F /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		A296553C2583330000D6FD3F /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		A29655482583622800D6FD3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2A1566026F2F77200F5F519 /* uwch.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = uwch.ttf; sourceTree = "<group>"; };
+		A2CDA72A2593ABF70083592D /* SearchResultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultView.xib; sourceTree = "<group>"; };
+		A2CDA72C2593AC490083592D /* SearchResultView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultView.h; sourceTree = "<group>"; };
+		A2CDA72D2593AC490083592D /* SearchResultView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultView.m; sourceTree = "<group>"; };
+		A2CDA7342595B38B0083592D /* ContentsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentsTableViewCell.h; sourceTree = "<group>"; };
+		A2CDA7352595B38B0083592D /* ContentsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentsTableViewCell.m; sourceTree = "<group>"; };
+		A2CDA7372595B3BE0083592D /* NotesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotesTableViewCell.h; sourceTree = "<group>"; };
+		A2CDA7382595B3BE0083592D /* NotesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesTableViewCell.m; sourceTree = "<group>"; };
+		A2CDA73A2595B3E80083592D /* BookmarksTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookmarksTableViewCell.h; sourceTree = "<group>"; };
+		A2CDA73B2595B3E80083592D /* BookmarksTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookmarksTableViewCell.m; sourceTree = "<group>"; };
+		A2CDA73D259658840083592D /* MagazineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagazineViewController.h; sourceTree = "<group>"; };
+		A2CDA73E259658840083592D /* MagazineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagazineViewController.m; sourceTree = "<group>"; };
+		A2CDA740259672620083592D /* Theme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		A2CDA741259672620083592D /* Theme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
+		A2DFE075258727AC000C7638 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A2DFE076258727AC000C7638 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A2DFE0782587C21E000C7638 /* BookCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookCollectionViewCell.h; sourceTree = "<group>"; };
+		A2DFE0792587C21E000C7638 /* BookCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookCollectionViewCell.m; sourceTree = "<group>"; };
+		A2DFE07B2587F0B8000C7638 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A2DFE07F2587F184000C7638 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A2DFE0812587F18F000C7638 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A2DFE08225888503000C7638 /* BookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		A2DFE08325888503000C7638 /* BookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
+		A2E78E74257DC9AE00CC915A /* SkyAO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyAO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2E78E77257DC9AE00CC915A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A2E78E78257DC9AE00CC915A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A2E78E7A257DC9AE00CC915A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		A2E78E7B257DC9AE00CC915A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		A2E78E86257DC9AE00CC915A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2E78E88257DC9AE00CC915A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2E78E89257DC9AE00CC915A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2E78E92257DCA1900CC915A /* SkyEpub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyEpub.h; sourceTree = "<group>"; };
+		A2E78E93257DCA1900CC915A /* ReflowableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflowableViewController.h; sourceTree = "<group>"; };
+		A2E78E94257DCA1900CC915A /* SearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResult.h; sourceTree = "<group>"; };
+		A2E78E95257DCA1900CC915A /* ContentProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentProvider.h; sourceTree = "<group>"; };
+		A2E78E96257DCA1900CC915A /* Highlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Highlight.h; sourceTree = "<group>"; };
+		A2E78E97257DCA1900CC915A /* SkyDRMControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyDRMControl.h; sourceTree = "<group>"; };
+		A2E78E98257DCA1900CC915A /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		A2E78E99257DCA1900CC915A /* SkyProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyProvider.h; sourceTree = "<group>"; };
+		A2E78E9A257DCA1A00CC915A /* BookInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookInformation.h; sourceTree = "<group>"; };
+		A2E78E9B257DCA1A00CC915A /* SpeechSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechSynthesizer.h; sourceTree = "<group>"; };
+		A2E78E9D257DCA1A00CC915A /* FixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedViewController.h; sourceTree = "<group>"; };
+		A2E78E9E257DCA1A00CC915A /* SkyKeyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyKeyManager.h; sourceTree = "<group>"; };
+		A2E78EA1257DCAE000CC915A /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		A2E78EA2257DCAE000CC915A /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		A2E78EA3257DCAE000CC915A /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		A2E78EA4257DCAE100CC915A /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		A2E78EA5257DCAE100CC915A /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		A2E78EA6257DCAE100CC915A /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		A2E78EA7257DCAE100CC915A /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		A2E78EA8257DCAE100CC915A /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		A2E78EA9257DCAE100CC915A /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		A2E78EAA257DCAE100CC915A /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		A2E78EAB257DCAE100CC915A /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		A2E78EB2257DCB1A00CC915A /* Books.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Books.sql; sourceTree = "<group>"; };
+		A2E78EB3257DCB1A00CC915A /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		A2E78EB4257DCB1A00CC915A /* scriptForFixed.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = scriptForFixed.js; sourceTree = "<group>"; };
+		A2E78EB5257DCB1B00CC915A /* custom.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = custom.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2E78E71257DC9AE00CC915A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A226F89026D41524004A6F40 /* libskyepub.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2A1565E26F2F75C00F5F519 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A28E59E1278CB91700A3A4E0 /* Mayflower Antique.ttf */,
+				A2A1566026F2F77200F5F519 /* uwch.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A2E78E6B257DC9AD00CC915A = {
+			isa = PBXGroup;
+			children = (
+				A2DFE0802587F184000C7638 /* Localizable.strings */,
+				A2E78E91257DC9F700CC915A /* SkyEpub */,
+				A2E78EA0257DCACF00CC915A /* fmdb */,
+				A2E78E76257DC9AE00CC915A /* SkyAO */,
+				A2E78EBA257DCB2300CC915A /* Samples */,
+				A2E78EB1257DCB0700CC915A /* Scripts */,
+				A2A1565E26F2F75C00F5F519 /* Fonts */,
+				A2E78E75257DC9AE00CC915A /* Products */,
+				A2FEDDAC259D27D700E9EC9B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A2E78E75257DC9AE00CC915A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2E78E74257DC9AE00CC915A /* SkyAO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2E78E76257DC9AE00CC915A /* SkyAO */ = {
+			isa = PBXGroup;
+			children = (
+				A2CDA72A2593ABF70083592D /* SearchResultView.xib */,
+				A29655482583622800D6FD3F /* Assets.xcassets */,
+				A2E78E77257DC9AE00CC915A /* AppDelegate.h */,
+				A2E78E78257DC9AE00CC915A /* AppDelegate.m */,
+				A2E78E7A257DC9AE00CC915A /* SceneDelegate.h */,
+				A2E78E7B257DC9AE00CC915A /* SceneDelegate.m */,
+				A296552E257DFB8100D6FD3F /* Main.storyboard */,
+				A2E78E85257DC9AE00CC915A /* LaunchScreen.storyboard */,
+				A2E78E89257DC9AE00CC915A /* main.m */,
+				A2965532257DFEF300D6FD3F /* Setting.h */,
+				A2965533257DFEF300D6FD3F /* Setting.m */,
+				A2965537257F1ED000D6FD3F /* SkyData.h */,
+				A2965538257F1ED000D6FD3F /* SkyData.m */,
+				A296553B2583330000D6FD3F /* SettingViewController.h */,
+				A296553C2583330000D6FD3F /* SettingViewController.m */,
+				A2DFE075258727AC000C7638 /* HomeViewController.h */,
+				A2DFE076258727AC000C7638 /* HomeViewController.m */,
+				A2E78E88257DC9AE00CC915A /* Info.plist */,
+				A2DFE0782587C21E000C7638 /* BookCollectionViewCell.h */,
+				A2DFE0792587C21E000C7638 /* BookCollectionViewCell.m */,
+				A2DFE08225888503000C7638 /* BookViewController.h */,
+				A2DFE08325888503000C7638 /* BookViewController.m */,
+				A2CDA72C2593AC490083592D /* SearchResultView.h */,
+				A2CDA72D2593AC490083592D /* SearchResultView.m */,
+				A2CDA7342595B38B0083592D /* ContentsTableViewCell.h */,
+				A2CDA7352595B38B0083592D /* ContentsTableViewCell.m */,
+				A2CDA7372595B3BE0083592D /* NotesTableViewCell.h */,
+				A2CDA7382595B3BE0083592D /* NotesTableViewCell.m */,
+				A2CDA73A2595B3E80083592D /* BookmarksTableViewCell.h */,
+				A2CDA73B2595B3E80083592D /* BookmarksTableViewCell.m */,
+				A2CDA73D259658840083592D /* MagazineViewController.h */,
+				A2CDA73E259658840083592D /* MagazineViewController.m */,
+				A2CDA740259672620083592D /* Theme.h */,
+				A2CDA741259672620083592D /* Theme.m */,
+			);
+			path = SkyAO;
+			sourceTree = "<group>";
+		};
+		A2E78E91257DC9F700CC915A /* SkyEpub */ = {
+			isa = PBXGroup;
+			children = (
+				A226F88F26D41504004A6F40 /* libskyepub.a */,
+				A2E78E92257DCA1900CC915A /* SkyEpub.h */,
+				A2E78E93257DCA1900CC915A /* ReflowableViewController.h */,
+				A2E78E9D257DCA1A00CC915A /* FixedViewController.h */,
+				A2E78E98257DCA1900CC915A /* Book.h */,
+				A2E78E9A257DCA1A00CC915A /* BookInformation.h */,
+				A2E78E95257DCA1900CC915A /* ContentProvider.h */,
+				A2E78E96257DCA1900CC915A /* Highlight.h */,
+				A2E78E94257DCA1900CC915A /* SearchResult.h */,
+				A2E78E97257DCA1900CC915A /* SkyDRMControl.h */,
+				A2E78E9E257DCA1A00CC915A /* SkyKeyManager.h */,
+				A2E78E99257DCA1900CC915A /* SkyProvider.h */,
+				A2E78E9B257DCA1A00CC915A /* SpeechSynthesizer.h */,
+			);
+			path = SkyEpub;
+			sourceTree = "<group>";
+		};
+		A2E78EA0257DCACF00CC915A /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				A2E78EA1257DCAE000CC915A /* FMDatabase.h */,
+				A2E78EA7257DCAE100CC915A /* FMDatabase.m */,
+				A2E78EA9257DCAE100CC915A /* FMDatabaseAdditions.h */,
+				A2E78EAA257DCAE100CC915A /* FMDatabaseAdditions.m */,
+				A2E78EAB257DCAE100CC915A /* FMDatabasePool.h */,
+				A2E78EA3257DCAE000CC915A /* FMDatabasePool.m */,
+				A2E78EA4257DCAE100CC915A /* FMDatabaseQueue.h */,
+				A2E78EA8257DCAE100CC915A /* FMDatabaseQueue.m */,
+				A2E78EA2257DCAE000CC915A /* FMDB.h */,
+				A2E78EA5257DCAE100CC915A /* FMResultSet.h */,
+				A2E78EA6257DCAE100CC915A /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		A2E78EB1257DCB0700CC915A /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				A2E78EB2257DCB1A00CC915A /* Books.sql */,
+				A2E78EB5257DCB1B00CC915A /* custom.css */,
+				A2E78EB3257DCB1A00CC915A /* script.js */,
+				A2E78EB4257DCB1A00CC915A /* scriptForFixed.js */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		A2E78EBA257DCB2300CC915A /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				A28E59DF278CB8F900A3A4E0 /* Alice.epub */,
+				A28E59E0278CB8FA00A3A4E0 /* Doctor.epub */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+		A2FEDDAC259D27D700E9EC9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2E78E73257DC9AE00CC915A /* SkyAO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2E78E8D257DC9AE00CC915A /* Build configuration list for PBXNativeTarget "SkyAO" */;
+			buildPhases = (
+				A2E78E70257DC9AE00CC915A /* Sources */,
+				A2E78E71257DC9AE00CC915A /* Frameworks */,
+				A2E78E72257DC9AE00CC915A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyAO;
+			productName = SkyAO;
+			productReference = A2E78E74257DC9AE00CC915A /* SkyAO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2E78E6C257DC9AD00CC915A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					A2E78E73257DC9AE00CC915A = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+				};
+			};
+			buildConfigurationList = A2E78E6F257DC9AD00CC915A /* Build configuration list for PBXProject "SkyAO" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ko,
+			);
+			mainGroup = A2E78E6B257DC9AD00CC915A;
+			productRefGroup = A2E78E75257DC9AE00CC915A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2E78E73257DC9AE00CC915A /* SkyAO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2E78E72257DC9AE00CC915A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E78EB7257DCB1B00CC915A /* script.js in Resources */,
+				A2CDA72B2593ABF70083592D /* SearchResultView.xib in Resources */,
+				A296552F257DFB8100D6FD3F /* Main.storyboard in Resources */,
+				A2E78E87257DC9AE00CC915A /* LaunchScreen.storyboard in Resources */,
+				A28E59E2278CB9E300A3A4E0 /* Alice.epub in Resources */,
+				A28E59E3278CB9E600A3A4E0 /* Doctor.epub in Resources */,
+				A2E78EB8257DCB1B00CC915A /* scriptForFixed.js in Resources */,
+				A28E59E4278CB9E700A3A4E0 /* Mayflower Antique.ttf in Resources */,
+				A2DFE07E2587F184000C7638 /* Localizable.strings in Resources */,
+				A2E78EB6257DCB1B00CC915A /* Books.sql in Resources */,
+				A2A1566226F2F79600F5F519 /* uwch.ttf in Resources */,
+				A29655492583622900D6FD3F /* Assets.xcassets in Resources */,
+				A2E78EB9257DCB1B00CC915A /* custom.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2E78E70257DC9AE00CC915A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E78EAD257DCAE100CC915A /* FMResultSet.m in Sources */,
+				A2CDA7392595B3BE0083592D /* NotesTableViewCell.m in Sources */,
+				A2E78EAF257DCAE100CC915A /* FMDatabaseQueue.m in Sources */,
+				A2E78E79257DC9AE00CC915A /* AppDelegate.m in Sources */,
+				A2CDA7362595B38B0083592D /* ContentsTableViewCell.m in Sources */,
+				A2CDA73F259658840083592D /* MagazineViewController.m in Sources */,
+				A2CDA73C2595B3E80083592D /* BookmarksTableViewCell.m in Sources */,
+				A2E78EAE257DCAE100CC915A /* FMDatabase.m in Sources */,
+				A2E78EB0257DCAE100CC915A /* FMDatabaseAdditions.m in Sources */,
+				A2965539257F1ED000D6FD3F /* SkyData.m in Sources */,
+				A2DFE07A2587C21E000C7638 /* BookCollectionViewCell.m in Sources */,
+				A2E78EAC257DCAE100CC915A /* FMDatabasePool.m in Sources */,
+				A2E78E8A257DC9AE00CC915A /* main.m in Sources */,
+				A2CDA742259672620083592D /* Theme.m in Sources */,
+				A2DFE08425888503000C7638 /* BookViewController.m in Sources */,
+				A2965534257DFEF300D6FD3F /* Setting.m in Sources */,
+				A2E78E7C257DC9AE00CC915A /* SceneDelegate.m in Sources */,
+				A2CDA72E2593AC490083592D /* SearchResultView.m in Sources */,
+				A296553D2583330000D6FD3F /* SettingViewController.m in Sources */,
+				A2DFE077258727AC000C7638 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A2DFE0802587F184000C7638 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2DFE07F2587F184000C7638 /* ko */,
+				A2DFE0812587F18F000C7638 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A2E78E85257DC9AE00CC915A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2E78E86257DC9AE00CC915A /* Base */,
+				A2DFE07B2587F0B8000C7638 /* ko */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2E78E8B257DC9AE00CC915A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = SkyEpub;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A2E78E8C257DC9AE00CC915A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = SkyEpub;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2E78E8E257DC9AE00CC915A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VU3HSRST5N;
+				INFOPLIST_FILE = SkyAO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SkyEpub",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyepub.SkyAO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2E78E8F257DC9AE00CC915A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VU3HSRST5N;
+				INFOPLIST_FILE = SkyAO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SkyEpub",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyepub.SkyAO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2E78E6F257DC9AD00CC915A /* Build configuration list for PBXProject "SkyAO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2E78E8B257DC9AE00CC915A /* Debug */,
+				A2E78E8C257DC9AE00CC915A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2E78E8D257DC9AE00CC915A /* Build configuration list for PBXNativeTarget "SkyAO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2E78E8E257DC9AE00CC915A /* Debug */,
+				A2E78E8F257DC9AE00CC915A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2E78E6C257DC9AD00CC915A /* Project object */;
+}
